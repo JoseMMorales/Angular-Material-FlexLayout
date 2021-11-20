@@ -7,10 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './core/material.module';
+import { HeaderComponent } from './header/header.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

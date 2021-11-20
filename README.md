@@ -2,9 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
 
-# Let's set up...
+## Let's set up...
 * ng @angular/material
 * npm i -s @angular/flex-layout
+
+## Flex-Layout Wiki...
+[funther info click here](https://github.com/angular/flex-layout/wiki)
 
 ## Development server
 
