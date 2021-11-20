@@ -1,1 +1,27 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+  <mat-toolbar-row fxLayoutAlign="space-between center">
+    <div fxLayout="row">
+      <button mat-button>
+        <mat-icon>home</mat-icon>
+        <span class="logo">Angular</span>
+      </button>
+      <div *ngIf="!deviceXs">
+        <button mat-button>Home</button>
+        <button mat-button>Contact</button>
+        <button mat-button>About Us</button>  
+      </div>
+    </div>
+    <div>
+      <button mat-icon-button>
+        <mat-icon *ngIf="deviceXs">more_vert</mat-icon>
+        <span *ngIf="!deviceXs">Menu</span>
+      </button>
+    </div>
+  </mat-toolbar-row>
+  
+  <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between center">
+    <button mat-button>Home</button>
+    <button mat-button>Contact</button>
+    <button mat-button>About Us</button>  
+  </mat-toolbar-row>
+</mat-toolbar>
