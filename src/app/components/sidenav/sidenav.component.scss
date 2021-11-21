@@ -3,12 +3,35 @@ mat-sidenav-container {
 
   mat-side, mat-sidenav-content {
     padding: 16px;
-    
   }
   
   mat-sidenav {
-    background-color: rgb(214, 103, 103);
-    width: 200px;
+    height: fit-content;
+    margin: 5px 0 5px 5px;
+    background-color: #3f51b5;
+    color: #fff;
+
+    button:first-child {
+      margin-top: 20px;
+    }
+
+    button:last-child {
+      margin-bottom: 20px;
+    }
   }
 }
+
+.button-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+mat-divider {
+  margin: 16px 20px;
+  background-color: darkgray;
+}
+
 
