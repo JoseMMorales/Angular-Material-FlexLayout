@@ -6,11 +6,11 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ToggleSidebarService {
   private data = new BehaviorSubject<boolean>(false);
-  currentData = this.data.asObservable();
+  currentData$ = this.data.asObservable();
 
   constructor(){}
 
-  setData(data: boolean): void {
+  setData(data: boolean) {
     return this.data.next(data);
   }
 }

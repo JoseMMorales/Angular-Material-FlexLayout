@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input } from '@angular/core';
-import { ToggleSidebarService } from '../services/toggle-sidebar.service';
+import { ToggleSidebarService } from '../../services/toggle-sidebar.service';
 
 @Component({
   selector: 'app-header',
