@@ -10,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 const Material = [
   MatToolbarModule,
@@ -21,7 +22,8 @@ const Material = [
   MatInputModule,
   MatSidenavModule,
   MatCardModule,
-  MatListModule
+  MatListModule,
+  MatButtonToggleModule
 ]
 
 @NgModule({
