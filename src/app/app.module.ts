@@ -10,6 +10,7 @@ import { MaterialModule } from './core/material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ContentComponent } from './components/content/content.component';
+import {LayoutModule} from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ContentComponent } from './components/content/content.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     FormsModule,
+    LayoutModule,
     ReactiveFormsModule,
     MaterialModule
   ],

@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Input } from '@angular/core';
-import { ToggleSidebarService } from '../../services/toggle-sidebar.service';
+import { Component, Input } from '@angular/core';
+import { ToggleSidevarService } from '../../services/toggle-sidevar.service';
+
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ export class HeaderComponent {
   deviceXs: boolean = false;
   toggleValue: boolean = false;
 
-  constructor(private service: ToggleSidebarService) {}
+  constructor(private service: ToggleSidevarService) {}
 
   onValChange() {
     this.toggleValue = !this.toggleValue

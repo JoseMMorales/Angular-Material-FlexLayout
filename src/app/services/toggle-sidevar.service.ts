@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ToggleSidebarService {
+export class ToggleSidevarService {
   private data = new BehaviorSubject<boolean>(false);
   currentData$ = this.data.asObservable();
 

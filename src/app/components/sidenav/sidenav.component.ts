@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-import { ToggleSidebarService } from '../../services/toggle-sidebar.service';
+import { ToggleSidevarService } from '../../services/toggle-sidevar.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -10,18 +10,19 @@ import { ToggleSidebarService } from '../../services/toggle-sidebar.service';
 export class SidenavComponent implements OnInit{
   @Input()
   deviceXs: boolean = false;
+
   showFiller: boolean = false;
+  modeValue: any = 'side';
 
   @ViewChild('sidenav')
-  nav: MatSidenav | undefined;
+  sidenav: MatSidenav | undefined;
 
-  constructor(private service: ToggleSidebarService) {}
+  constructor(private serviceToggle: ToggleSidevarService) {}
   
   ngOnInit() {
-    this.service.currentData$.subscribe((data: boolean) => {      
+    this.serviceToggle.currentData$.subscribe((data: boolean) => {      
       this.showFiller = data;
-      
-      this.showFiller ? this.nav?.open() : this.nav?.close();
+      this.showFiller ? this.sidenav?.open() : this.sidenav?.close();
     });
   } 
 }
