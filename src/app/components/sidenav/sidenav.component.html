@@ -1,6 +1,6 @@
 <mat-sidenav-container>
-<mat-sidenav #sidenav> 
-
+<mat-sidenav #sidenav [mode]="mode"> 
+<h1>{{modeValue$ | async}}</h1>
     <button mat-button class="button-menu">
       <mat-icon>home</mat-icon>
       <span>Home</span>
