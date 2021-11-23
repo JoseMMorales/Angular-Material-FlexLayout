@@ -9,9 +9,7 @@ export class ModeSidevarService {
   private mode = new BehaviorSubject<string>('');
   currentMode$ = this.mode.asObservable();
 
-  constructor(private observer: BreakpointObserver){
-
-  }
+  constructor(private observer: BreakpointObserver){}
 
   initObservers(): void {    
     this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
@@ -19,7 +17,6 @@ export class ModeSidevarService {
         this.mode.next('over')
       } else {
         this.mode.next('side')
-        
       }
     });
   }

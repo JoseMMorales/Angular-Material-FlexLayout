@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MediaChange, MediaObserver } from '@angular/flex-layout';
-import { Subscription } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { ModeSidevarService } from './services/mode-sidevar.service';
 
 @Component({
@@ -11,6 +11,7 @@ import { ModeSidevarService } from './services/mode-sidevar.service';
 export class AppComponent implements OnInit {
   private mediaSub: Subscription | undefined;
   deviceXs!: boolean;
+  mode!: string;
 
   constructor(private mediaObserver: MediaObserver, private serviceMode: ModeSidevarService) {}
 
@@ -22,14 +23,9 @@ export class AppComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    /*his.serviceMode.currentMode$.subscribe((value: any) => {
-      console.log(value)
-      console.log("Hello");
-      this.modeValue = value
-      this.sidenav.mode = this.modeValue;
-    });*/
-    this.serviceMode.currentMode$.subscribe((value: any) => console.log(value));
-    
+    this.serviceMode.currentMode$.subscribe((value: string) => {
+      this.mode = value;
+    });
   }
 
   OnDestroy() {
