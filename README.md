@@ -13,6 +13,9 @@ The goal in this project is to buid a card list keeping responsive design, and r
 #### Directives used fxLayoutGap, fxFlex, fxFlex.xs, fxFlex.sm, fxLayout.
 #### Further info at [flex-layout Wiki](https://github.com/angular/flex-layout/wiki)
 
+#### Applying flex-layout...
+![Screenshot 2021-12-19 at 16 33 04](https://user-images.githubusercontent.com/43299285/146680911-ef430428-33b6-4505-abc2-b68a198439b6.png)
+
 ## Installing...
 
 * `git clone https://github.com/JoseMMorales/Angular-Material-FlexLayout.git`
