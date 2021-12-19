@@ -14,7 +14,12 @@ The goal in this project is to buid a card list keeping responsive design, and r
 #### Further info at [flex-layout Wiki](https://github.com/angular/flex-layout/wiki)
 
 #### Applying flex-layout...
+
+<div align="center">
+
 ![Screenshot 2021-12-19 at 16 33 04](https://user-images.githubusercontent.com/43299285/146680911-ef430428-33b6-4505-abc2-b68a198439b6.png)
+
+</div>
 
 ## Installing...
 
@@ -22,8 +27,6 @@ The goal in this project is to buid a card list keeping responsive design, and r
 * `cd Angular-Material-FlexLayout`
 * `npm install`
 * `npm start`
-
-* `ng @angular/material` to install Angular [Material](https://material.angular.io/) 
 
 ## Author
 
