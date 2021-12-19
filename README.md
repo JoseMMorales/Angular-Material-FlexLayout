@@ -8,12 +8,19 @@ The goal in this project is to buid a card list keeping responsive design, and r
   <img src="src/assets/demoWeb.gif" />
 </div>
 
+## Angular FlexLayout used...
+#### Installing [flex-layout](https://github.com/angular/flex-layout)  `npm i -s @angular/flex-layout` 
+#### Directives used fxLayoutGap, fxFlex, fxFlex.xs, fxFlex.sm, fxLayout.
+#### Further info at [flex-layout Wiki](https://github.com/angular/flex-layout/wiki)
 
-## Let's set up...
+## Installing...
+
+* `git clone https://github.com/JoseMMorales/Angular-Material-FlexLayout.git`
+* `cd Angular-Material-FlexLayout`
+* `npm install`
+* `npm start`
+
 * `ng @angular/material` to install Angular [Material](https://material.angular.io/) 
-* `npm i -s @angular/flex-layout` to install [flex-layout](https://github.com/angular/flex-layout)
-
-## flex-layout [Wiki](https://github.com/angular/flex-layout/wiki)
 
 ## Author
 

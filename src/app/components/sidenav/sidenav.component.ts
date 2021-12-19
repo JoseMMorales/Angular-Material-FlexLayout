@@ -11,9 +11,7 @@ import { ToggleSidevarService } from '../../services/toggle-sidevar.service';
 export class SidenavComponent implements OnInit{
   @Input()
   deviceXs: boolean = false;
-
   mode: MatDrawerMode = 'side';
-
   showFiller: boolean = false;
 
   @ViewChild('sidenav')
