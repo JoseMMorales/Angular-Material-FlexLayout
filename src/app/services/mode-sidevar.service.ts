@@ -1,12 +1,13 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { Injectable } from '@angular/core';
+import { MatDrawerMode } from '@angular/material/sidenav';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ModeSidevarService {
-  private mode = new BehaviorSubject<string>('');
+  private mode = new BehaviorSubject<MatDrawerMode>('side');
   currentMode$ = this.mode.asObservable();
 
   constructor(private observer: BreakpointObserver){}
@@ -22,7 +23,7 @@ export class ModeSidevarService {
   }
 
 
-  getMode():Observable<string>{
+  getMode():Observable<MatDrawerMode>{
     this.initObservers();
     return this.currentMode$;
   }

@@ -1,5 +1,5 @@
 <mat-sidenav-container>
-<mat-sidenav #sidenav> 
+<mat-sidenav #sidenav [mode]= "mode"> 
     <button mat-button class="button-menu">
       <mat-icon>home</mat-icon>
       <span>Home</span>
@@ -27,6 +27,9 @@
     </button>
     
   </mat-sidenav>
+  <mat-sidenav-content>
+    <app-content></app-content>
+  </mat-sidenav-content>
 </mat-sidenav-container>
 
 

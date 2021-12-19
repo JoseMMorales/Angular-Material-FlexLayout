@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { MatDrawerMode, MatSidenav } from '@angular/material/sidenav';
+import { ModeSidevarService } from 'src/app/services/mode-sidevar.service';
 import { ToggleSidevarService } from '../../services/toggle-sidevar.service';
 
 @Component({
@@ -11,7 +12,6 @@ export class SidenavComponent implements OnInit{
   @Input()
   deviceXs: boolean = false;
 
-  @Input()
   mode: MatDrawerMode = 'side';
 
   showFiller: boolean = false;
@@ -19,17 +19,21 @@ export class SidenavComponent implements OnInit{
   @ViewChild('sidenav')
   sidenav!: MatSidenav;
 
-  constructor(private serviceToggle: ToggleSidevarService) {}
+  constructor(
+    private serviceToggle: ToggleSidevarService, 
+    private serviceMode: ModeSidevarService) {}
   
   ngOnInit() {
-    this.serviceToggle.currentData$.subscribe((data: boolean) => {      
+    this.serviceToggle.currentData$.subscribe((data: boolean) => {    
       this.showFiller = data;
       this.showFiller ? this.sidenav?.open() : this.sidenav?.close();
     });
 
-    console.log(this.mode);
-    
-    this.sidenav.mode = this.mode
+    this.serviceMode.getMode().subscribe(mode =>  {
+      return this.mode = mode
+    })
   } 
+
+
 
 }

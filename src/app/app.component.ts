@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MediaChange, MediaObserver } from '@angular/flex-layout';
-import { Observable, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { ModeSidevarService } from './services/mode-sidevar.service';
 
 @Component({
