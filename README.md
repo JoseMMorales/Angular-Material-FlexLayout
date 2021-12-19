@@ -1,34 +1,14 @@
-# AngularWebDesign
+# Himalayas Responsive Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+The goal in this project is to buid a card list keeping responsive design, and reaching the main approach to web design that aims to make web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size to ensure usability and satisfaction. That's why [Angular Layout](https://material.angularjs.org/1.1.1/layout/introduction) is the most suitable API that offers a variety of features to fit the web delivered completely flexible no matter where. 
+
 
 ## Let's set up...
-* ng @angular/material
-* npm i -s @angular/flex-layout
+* `ng @angular/material` to install Angular [Material](https://material.angular.io/) 
+* `npm i -s @angular/flex-layout` to install [flex-layout](https://github.com/angular/flex-layout)
 
-## Flex-Layout Wiki...
-[funther info click here](https://github.com/angular/flex-layout/wiki)
+## flex-layout [Wiki](https://github.com/angular/flex-layout/wiki)
 
-## Development server
+## Author
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+JoseMMorales
