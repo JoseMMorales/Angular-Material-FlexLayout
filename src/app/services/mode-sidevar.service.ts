@@ -13,7 +13,7 @@ export class ModeSidevarService {
   constructor(private observer: BreakpointObserver){}
 
   initObservers(): void {    
-    this.observer.observe(['(max-width: 600px)']).subscribe((res) => {
+    this.observer.observe(['(max-width: 599px)']).subscribe((res) => {
       if (res.matches) {
         this.mode.next('over')
       } else {
