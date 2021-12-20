@@ -9,8 +9,6 @@ import { ToggleSidevarService } from '../../services/toggle-sidevar.service';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent implements OnInit{
-  @Input()
-  deviceXs: boolean = false;
   mode: MatDrawerMode = 'side';
   showFiller: boolean = false;
 
@@ -22,16 +20,13 @@ export class SidenavComponent implements OnInit{
     private serviceMode: ModeSidevarService) {}
   
   ngOnInit() {
-    this.serviceToggle.currentData$.subscribe((data: boolean) => {    
-      this.showFiller = data;
+    this.serviceToggle.currentData$.subscribe((boolean: boolean) => {    
+      this.showFiller = boolean;
       this.showFiller ? this.sidenav?.open() : this.sidenav?.close();
     });
 
     this.serviceMode.getMode().subscribe(mode =>  {
       return this.mode = mode
-    })
+    })    
   } 
-
-
-
 }
