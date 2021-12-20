@@ -1,6 +1,6 @@
 # Himalayas Responsive Project
 
-The goal in this project is to buid a card list keeping responsive design, and reaching the main approach to web design that aims to make web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size to ensure usability and satisfaction. That's why [Angular Layout](https://material.angularjs.org/1.1.1/layout/introduction) is the most suitable API that offers a variety of features to fit the web delivered completely flexible no matter where. 
+The goal in this project is to build a card list keeping responsive design, and reaching the main approach to web design that aims to make web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size to ensure usability and satisfaction. That's why [Angular Layout](https://material.angularjs.org/1.1.1/layout/introduction) is the most suitable API that offers a variety of features to fit the web delivered no matter where. 
 
 ## Demo
 
@@ -8,7 +8,7 @@ The goal in this project is to buid a card list keeping responsive design, and r
   <img src="src/assets/demoWeb.gif" />
 </div>
 
-## Angular FlexLayout used...
+## Angular flex-layout used...
 #### Installing [flex-layout](https://github.com/angular/flex-layout)  `npm i -s @angular/flex-layout` 
 #### Directives used fxLayoutGap, fxFlex, fxFlex.xs, fxFlex.sm, fxLayout.
 #### Further info at [flex-layout Wiki](https://github.com/angular/flex-layout/wiki)
@@ -18,6 +18,16 @@ The goal in this project is to buid a card list keeping responsive design, and r
 <div align="center">
 
 ![Screenshot 2021-12-19 at 16 33 04](https://user-images.githubusercontent.com/43299285/146680911-ef430428-33b6-4505-abc2-b68a198439b6.png)
+
+</div>
+
+## Media queries in flex-layout...
+
+[Media Observer](https://github.com/angular/flex-layout/wiki/MediaObserver) is an injectable service that identify breakpoints and send notifications to be subscribed.
+
+<div align="center">
+
+![Screenshot 2021-12-20 at 15 02 35](https://user-images.githubusercontent.com/43299285/146779092-69b555a1-c567-4e46-8c97-2493f834784c.png)
 
 </div>
 

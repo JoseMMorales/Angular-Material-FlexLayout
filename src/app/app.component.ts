@@ -11,21 +11,14 @@ import { ModeSidevarService } from './services/mode-sidevar.service';
 export class AppComponent implements OnInit {
   private mediaSub: Subscription | undefined;
   deviceXs!: boolean;
-  mode!: string;
 
-  constructor(private mediaObserver: MediaObserver, private serviceMode: ModeSidevarService) {}
+  constructor(private mediaObserver: MediaObserver) {}
 
   ngOnInit(): void {
     this.mediaSub = this.mediaObserver.media$.subscribe((change: MediaChange) => {
         this.deviceXs = change.mqAlias === 'xs' ? true : false;
       }
     )
-  }
-
-  ngAfterViewInit() {
-    this.serviceMode.currentMode$.subscribe((value: string) => {
-      this.mode = value;
-    });
   }
 
   OnDestroy() {
