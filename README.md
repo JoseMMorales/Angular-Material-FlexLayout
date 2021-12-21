@@ -21,13 +21,23 @@ The goal in this project is to build a card list keeping responsive design, and 
 
 </div>
 
-## Media queries in flex-layout...
+## Media Observer in flex-layout...
 
 [Media Observer](https://github.com/angular/flex-layout/wiki/MediaObserver) is an injectable service that identify breakpoints and send notifications to be subscribed.
 
 <div align="center">
 
 ![Screenshot 2021-12-20 at 15 02 35](https://user-images.githubusercontent.com/43299285/146779092-69b555a1-c567-4e46-8c97-2493f834784c.png)
+
+</div>
+
+## Breakpoint Observer in flex-layout...
+
+[Breakpoint Observer](https://material.angular.io/cdk/layout/api) lets you evaluate media queries to determine the current screen size and react to changes when the viewport size crosses a breakpoint.
+
+<div align="center">
+
+![Screenshot 2021-12-21 at 07 52 18](https://user-images.githubusercontent.com/43299285/146885041-dfc2d588-11f5-4f28-8582-2f720283687f.png)
 
 </div>
 
